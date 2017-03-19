@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">feedback</string>
+    <string name="title_activity_theory_feedback">Theory Feedback</string>
 </resources>

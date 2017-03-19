@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Ability to understand student's difficulties and willingness to help them"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Regularity and Punctuality"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Commitment to academic work in the class"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Interaction in the class"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Coverage of syllabus"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Planning of lessons throughout the Semester"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Effective communication of subject matter"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Management of lecture and class control"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="16sp"
+                        android:text="Overall ability to maintain sanctity of Teaching - Learning process"/>
+
+                    <com.appyvet.rangebar.RangeBar
+                        xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        custom:rangeBar="false"
+                        custom:pinMaxFont="12sp"
+                        custom:tickStart="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp">
+
+                    <EditText
+                        android:id="@+id/comment_th"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:hint="Comments"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_done" />
+
+</android.support.design.widget.CoordinatorLayout>
