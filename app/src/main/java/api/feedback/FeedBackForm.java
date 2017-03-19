@@ -1,11 +1,11 @@
 package api.feedback;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +28,8 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+
+import static api.feedback.LoginActivity.SP_LOGIN_ID;
 
 public class FeedBackForm extends AppCompatActivity {
 
@@ -142,10 +144,10 @@ public class FeedBackForm extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences prefs = getSharedPreferences(SP_LOGIN_ID, Context.MODE_PRIVATE);
         uploadToServer("http://10.120.110.161:8000/save-feedback/", String.valueOf(json));
-        preferences.edit().putBoolean(subject + teacherName, true).apply();
-
+        prefs.edit().putBoolean(subject + teacherName, true).apply();
+        finish();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
