@@ -173,7 +173,7 @@ public class LoginActivity extends AppCompatActivity {
                     editor.apply();
 
                     finish();
-                    startActivity(new Intent(LoginActivity.this, FeedBackForm.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }
                 else{
                     sapET.setError(getString(R.string.error_incorrect_password));

@@ -1,8 +1,11 @@
 package api.feedback;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -42,6 +45,15 @@ public class FeedBackForm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+        teacherName = intent.getStringExtra("teacher");
+        subject = intent.getStringExtra("subject");
+        division = intent.getStringExtra("division");
+        if(intent.getBooleanExtra("isPracs", false))
+            formType = FORM_TYPE_PRACS;
+        else
+            formType = FORM_TYPE_THEORY;
 
         if(formType == FORM_TYPE_THEORY){
             setTitle("Theory Feedback");
@@ -130,7 +142,9 @@ public class FeedBackForm extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         uploadToServer("http://10.120.110.161:8000/save-feedback/", String.valueOf(json));
+        preferences.edit().putBoolean(subject + teacherName, true).apply();
 
     }
 
