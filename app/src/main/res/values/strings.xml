@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">feedback</string>
     <string name="title_activity_theory_feedback">Theory Feedback</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Username or password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_account_missing">No such account exist</string>
+    <string name="error_passwaord_no_match">Password do not match</string>
+    <string name="error_invalid_data">Invalid data entered</string>
+    <string name="login_authenticating">Authenticating</string>
+    <string name="login_logging_in">Logging In</string>
+    <string name="login_skip">Making App ready</string>
 </resources>
